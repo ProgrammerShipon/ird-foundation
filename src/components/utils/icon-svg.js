@@ -364,7 +364,7 @@ export const magnifyGlassIcon = (
 /**
  * language select
  */
-export const languageSelect = (
+export const languageSelectIcon = (
   <svg
     width={20}
     height={20}

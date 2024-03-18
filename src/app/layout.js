@@ -1,7 +1,8 @@
 import Header from "@/components/Header/Header";
+import Settings from "@/components/Settings/Settings";
+import TopHeader from "@/components/TopHeader/TopHeader";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import TopHeader from "@/components/TopHeader/TopHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,11 +16,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} bg-bgColor bodyHeight`}>
         <div className="flex items-start justify-start gap-[30px] max-w-[1920px] p-4 sm:p-6 md:p-8 lg:p-10 transition duration-300">
+          {/* side bar or side header */}
           <Header />
           <main className="w-full">
-            <TopHeader />
+            {/* top header */}
+            <TopHeader className="mb-7" />
 
-            {children}
+            <div className="flex items-start justify-between">
+              <div className="w-full">{children}</div>
+
+              {/* right side setting */}
+              <Settings />
+            </div>
           </main>
         </div>
       </body>

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import logoImg from "../../assets/logo.png";
 import Box from "../regular/Carts/Box";
 import { supportIcon } from "../utils/icon-svg";
@@ -8,7 +7,7 @@ import NavItems from "./NavItems";
 
 export default function Header() {
   return (
-    <header className="min-h-full bodyHeight">
+    <header className="min-h-full h-[calc(100vh_-_80px)]">
       <Box className="!px-[13px] h-full flex items-center justify-between flex-col">
         {/* logo */}
         <figure>

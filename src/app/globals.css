@@ -1,8 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
-.bodyHeight {
-  height: calc(100vh - 100px);
-}
